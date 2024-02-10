@@ -11,7 +11,6 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.hibernate.annotations.UuidGenerator;
 
-import static com.fasterxml.jackson.annotation.JsonInclude.*;
 import static com.fasterxml.jackson.annotation.JsonInclude.Include.*;
 
 @Entity
@@ -24,13 +23,13 @@ import static com.fasterxml.jackson.annotation.JsonInclude.Include.*;
 public class Contact {
     @Id
     @UuidGenerator
-    @Column(name="id", unique = true, updatable = false)
+    @Column(name = "id", unique = true, updatable = false)
     private String id;
     private String name;
-    private String birthplace;
+    private String email;
     private String title;
-    private String career;
-    private String sns;
+    private String phone;
+    private String address;
     private String status;
     private String photoUrl;
 }
