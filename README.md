@@ -47,7 +47,7 @@ git clone https://github.com/your-github-username/seattle.seahawks.git
 ```
 Navigate to the project directory:
 ```java
-cd seattle.seahawks
+cd seahawks/src/main/java/Seattle/seahawks
 ```
 Build the project using Maven:
 ```java
